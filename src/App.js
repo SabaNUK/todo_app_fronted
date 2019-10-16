@@ -3,13 +3,19 @@ import React from 'react';
 import './App.css';
 import Header from './components/Header';
 import Intro from './components/Intro';
-
+import Task from './components/Task';
 function App() {
 
   return (
-    <div> 
+    <div className="container">
     <Header />
     <Intro />
+    <Task taskDescription="Buy some milk" />
+    <Task taskDescription="Pickup dog food" />
+    <Task taskDescription="Buy some chocolate" />
+    <Task taskDescription="Do homework" />
+
+
     </div>
   );
 }
