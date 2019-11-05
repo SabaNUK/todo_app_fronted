@@ -4,7 +4,11 @@ class Intro extends React.Component {
 
     render() {
         return (
-            <p>Welcome to my new app</p>
+            <div className="row">
+        <div className="col-12">
+            <strong>{this.props.introParagraph}</strong>
+         </div>
+         </div>
         );
 
 
