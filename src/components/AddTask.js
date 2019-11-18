@@ -18,16 +18,6 @@ taskDescriptionChanged = (event) => {
   taskDescription = event.target.value;
   this.setState({taskDescription});
 }
-createTasks = item => {
-  return (
-    <li key={item.key} onClick={() => this.props.deleteItem(item.key)}>
-      {item.text}
-    
-    </li>
-    
-
-  )
-}
 render() {
   return (
     <div className="row">
@@ -35,6 +25,7 @@ render() {
         <input
           className="form-control"
           type="text"
+          id="addTask"
           placeholder="What do you want to do..."
           value={this.state.taskDescription}
           onChange={this.taskDescriptionChanged}
